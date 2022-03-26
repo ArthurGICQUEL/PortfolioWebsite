@@ -1,0 +1,15 @@
+---
+title: Po.
+date: '2022-03-26'
+tags: ['game development', 'unity']
+draft: false
+summary: The first game I created, just before sarting my first year at E-artsup.
+---
+
+## The game
+
+Po. is a shoot 'em up where each boss gameplay is inspired by other games I like. The two bosses currently present in the game are respectivly inspired by Audiosurf and Super Hexagon. In between the bossfights, I tried to make the game fun by making the ennemies drop a lot of shooting upgrades, so the player has a lot of chance to become OP.
+
+## The context of creation
+
+I created Po. during my first week at E-artsup and it was also my first time making a video game. It was during this project that I discovered my interest for coding, seeing all the possibilities and the satisfaction to see something I coded myself work as I intended.
