@@ -1,6 +1,6 @@
-import Script from 'next/script'
+import Script from 'next/script';
 
-let Po = () => {
+let Po = ({ buildUrl, buildPrefix, companyName, productName, productVersion }) => {
   return (
     <>
       <div id="unity-container" className="relative">
@@ -63,17 +63,16 @@ let Po = () => {
               }
               updateBannerVisibility();
             }
-      
-            var buildUrl = '/gameBuilds/Po/Build'
-            var loaderUrl = buildUrl + "/PoBuildUncompressed.loader.js";
+            
+            var loaderUrl = "${buildUrl}/${buildPrefix}.loader.js";
             var config = {
-              dataUrl: buildUrl + "/PoBuildUncompressed.data",
-              frameworkUrl: buildUrl + "/PoBuildUncompressed.framework.js",
-              codeUrl: buildUrl + "/PoBuildUncompressed.wasm",
+              dataUrl: "${buildUrl}/${buildPrefix}.data",
+              frameworkUrl: "${buildUrl}/${buildPrefix}.framework.js",
+              codeUrl: "${buildUrl}/${buildPrefix}.wasm",
               streamingAssetsUrl: "StreamingAssets",
-              companyName: "DefaultCompany",
-              productName: "shmup piscine e-artup",
-              productVersion: "1.0",
+              companyName: "${companyName}",
+              productName: "${productName}",
+              productVersion: "${productVersion}",
               showBanner: unityShowBanner,
             };
       
@@ -115,7 +114,7 @@ let Po = () => {
           `}
       </Script>
     </>
-  )
-}
+  );
+};
 
-export default Po
+export default Po;
