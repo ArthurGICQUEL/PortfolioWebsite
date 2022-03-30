@@ -1,4 +1,4 @@
-import Script from 'next/script';
+import Script from 'next/script'
 
 let Po = ({ buildUrl, buildPrefix, companyName, productName, productVersion }) => {
   return (
@@ -114,7 +114,7 @@ let Po = ({ buildUrl, buildPrefix, companyName, productName, productVersion }) =
           `}
       </Script>
     </>
-  );
-};
+  )
+}
 
-export default Po;
+export default Po
