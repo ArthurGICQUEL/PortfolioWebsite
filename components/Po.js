@@ -1,6 +1,6 @@
 import Script from 'next/script'
 
-let Po = ({}) => {
+let Po = () => {
   return (
     <>
       <div id="unity-container" className="relative">
