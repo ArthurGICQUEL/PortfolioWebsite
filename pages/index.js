@@ -21,9 +21,21 @@ export default function Home({ posts }) {
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
+          <div className="pt-10 text-center text-4xl font-extrabold leading-9 tracking-tight text-teal-500 sm:text-5xl sm:leading-10 md:text-7xl md:leading-14">
+            Blog.
+          </div>
+          <div className="text-center text-4xl font-extrabold leading-9 tracking-tight text-indigo-500 sm:text-5xl sm:leading-10 md:text-7xl md:leading-14">
+            Showcase.
+          </div>
+          <div className="pb-10 text-center text-4xl font-extrabold leading-9 tracking-tight text-purple-500 sm:text-5xl sm:leading-10 md:text-7xl md:leading-14">
+            Portfolio.
+          </div>
+          <h1 className="pb-16 text-xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+            Hi, I'm Arthur, a Game developer with a focus on Unity C#.
           </h1>
+          <h2 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-5xl md:leading-14">
+            Latest posts
+          </h2>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>

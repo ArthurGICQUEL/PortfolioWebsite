@@ -1,19 +1,27 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Ashkyn',
+    description: `My first 3D game aswell as my end of first year project.`,
+    imgSrc: '/static/images/games/AshkynTitle.png',
+    href: '/blog/projects/ashkyn',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'Po.',
+    description: `The first game I created, just before sarting my first year at E-artsup.`,
+    imgSrc: '/static/images/games/PO2.png',
+    href: '/blog/projects/po',
+  },
+  {
+    title: 'HomeRush',
+    description: `A versus game created for the Global Game Jam of 2020.`,
+    imgSrc: '/static/images/games/homerushTitle.png',
+    href: '/blog/projects/homeRush',
+  },
+  {
+    title: 'SheepDog',
+    description: `A game jam project I did on my first year at E-artsup.`,
+    imgSrc: '/static/images/games/Sheepdog.png',
+    href: '/blog/projects/sheepDog',
   },
 ]
 
