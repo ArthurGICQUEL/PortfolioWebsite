@@ -1,6 +1,6 @@
 import Script from 'next/script'
 
-let Po = () => {
+let Po = ({}) => {
   return (
     <>
       <div id="unity-container" className="relative">
@@ -29,7 +29,7 @@ let Po = () => {
         </div>
       </div>
 
-      <Script>
+      <Script id="unity-script">
         {`
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
