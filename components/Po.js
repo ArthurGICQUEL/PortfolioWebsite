@@ -1,6 +1,9 @@
 import Script from 'next/script'
 
-let Po = ({ buildUrl, buildPrefix, companyName, productName, productVersion }) => {
+let Po = ({ projectUrl, buildPrefix, companyName, productName, productVersion }) => {
+  const isProd = process.env.NODE_ENV == 'production'
+  const compressionSuffix = isProd ? '.br' : ''
+  const buildUrl = projectUrl + (isProd ? '/Build' : '/UncompressedBuild')
   return (
     <>
       <div id="unity-container" className="relative">
@@ -64,11 +67,12 @@ let Po = ({ buildUrl, buildPrefix, companyName, productName, productVersion }) =
               updateBannerVisibility();
             }
             
+            
             var loaderUrl = "${buildUrl}/${buildPrefix}.loader.js";
             var config = {
-              dataUrl: "${buildUrl}/${buildPrefix}.data",
-              frameworkUrl: "${buildUrl}/${buildPrefix}.framework.js",
-              codeUrl: "${buildUrl}/${buildPrefix}.wasm",
+              dataUrl: "${buildUrl}/${buildPrefix}.data${compressionSuffix}",
+              frameworkUrl: "${buildUrl}/${buildPrefix}.framework.js${compressionSuffix}",
+              codeUrl: "${buildUrl}/${buildPrefix}.wasm${compressionSuffix}",
               streamingAssetsUrl: "StreamingAssets",
               companyName: "${companyName}",
               productName: "${productName}",
