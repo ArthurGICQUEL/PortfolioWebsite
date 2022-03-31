@@ -1,9 +1,6 @@
 import Script from 'next/script'
 
-let Po = ({ projectUrl, buildPrefix, companyName, productName, productVersion }) => {
-  const isProd = process.env.NODE_ENV == 'production'
-  const compressionSuffix = isProd ? '.br' : ''
-  const buildUrl = projectUrl + (isProd ? '/Build' : '/UncompressedBuild')
+let Po = ({ buildUrl, buildPrefix, companyName, productName, productVersion }) => {
   return (
     <>
       <div id="unity-container" className="relative">
@@ -70,9 +67,9 @@ let Po = ({ projectUrl, buildPrefix, companyName, productName, productVersion })
             
             var loaderUrl = "${buildUrl}/${buildPrefix}.loader.js";
             var config = {
-              dataUrl: "${buildUrl}/${buildPrefix}.data${compressionSuffix}",
-              frameworkUrl: "${buildUrl}/${buildPrefix}.framework.js${compressionSuffix}",
-              codeUrl: "${buildUrl}/${buildPrefix}.wasm${compressionSuffix}",
+              dataUrl: "${buildUrl}/${buildPrefix}.data",
+              frameworkUrl: "${buildUrl}/${buildPrefix}.framework.js",
+              codeUrl: "${buildUrl}/${buildPrefix}.wasm",
               streamingAssetsUrl: "StreamingAssets",
               companyName: "${companyName}",
               productName: "${productName}",
