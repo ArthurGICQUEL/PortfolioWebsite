@@ -82,7 +82,7 @@ Each pokemon will have a "typeMask" representing their single or multiple types.
 
 If you wanted to display only pokemons of a certain type, you would need to create a search "typeMask", let's say we want to display all the plant pokemon, it would be equal to "100".
 
-To display all of those plant pokemon, for each pokemon you'll need to verifiy this equation :
+To display all of those plant pokemon, for each pokemon you'll need to verify this equation :
 
 - pokemon.typeMask AND 100 != 0
 
