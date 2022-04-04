@@ -41,8 +41,9 @@ Then you just need to apply those to each bit of your bit strings
 
 Some examples :
 
-| `1001` | AND | `0101` | = | `0001` |
+||||||
 |--------|-----|--------|---|--------|
+| `1001` | AND | `0101` | = | `0001` |
 | `1010` | OR  | `0011` | = | `1011` |
 | `1010` | XOR | `0011` | = | `1001` |
 
