@@ -3,12 +3,12 @@ title: The usage of bitwise operators in Unity
 date: '2022-03-26'
 tags: ['unity']
 draft: false
-summary: Bitwise operations are ones of the most basic operations you can give to a processor. They can be very usefull in unity to manipulate the layerMasks.
+summary: Bitwise operations are one of the most basic operations you can give to a processor. They can be very useful in unity to manipulate layerMasks.
 ---
 
 ## The bitwise operators
 
-When using bitwise, you need to consider numbers as a bit string. So when you see "10" don't think about it as a number but more as two bits, one equal to 1 and the other equal to 0. Once you undersand that, you just need to learn your basic logical operators tables of truth.
+When using bitwise operators, you need to consider numbers as bit strings. So when you see "10" don't think about it as a number but more as two bits, one equal to 1 and the other equal to 0. Once you undersand that, you just need to learn your basic logical operators tables of truth.
 
 ---
 
@@ -18,11 +18,11 @@ When using bitwise, you need to consider numbers as a bit string. So when you se
 
 ---
 
-Then you just need to applicate those to each bit of your bit strings
+Then you just need to apply those to each bit of your bit strings
 
 ---
 
-Some exemples :
+Some examples :
 
 - 1001 AND 0101 = 0001
 - 1010 OR 0011 = 1011
@@ -44,7 +44,7 @@ Exemple of layerMasks :
 
 ---
 
-A usefull tool you can use to write layerMasks is the right shit operator : `<<` in C#.
+A useful tool you can use to write layerMasks is the right shift operator : `<<` in C#.
 
 ---
 
@@ -71,7 +71,7 @@ Once you get comfortable using bitwise operators, you can use them for more than
 
 ---
 
-Each pokemon will have a "typeMask" representing their only or multiple types.
+Each pokemon will have a "typeMask" representing their single or multiple types.
 
 ---
 
@@ -80,9 +80,9 @@ Each pokemon will have a "typeMask" representing their only or multiple types.
 
 ---
 
-If you wan't to display only pokemons of a certain type, you would need to create a search "typeMask", lets say we wan't to display all the plant pokemon, it would be equal to "100".
+If you wanted to display only pokemons of a certain type, you would need to create a search "typeMask", let's say we want to display all the plant pokemon, it would be equal to "100".
 
-To display all those plant pokemon, for each pokemon you'll need to verifiy this equation :
+To display all of those plant pokemon, for each pokemon you'll need to verifiy this equation :
 
 - pokemon.typeMask AND 100 != 0
 
@@ -92,11 +92,11 @@ Note that this will also display the pokemons that have more than just the plant
 
 ---
 
-If you wan't to only dispay the pokemon that only have the plant type, you'll simply need to check if your search and pokemon typeMasks are equal.
+If you want to only dispay the pokemon that only have the plant type, you'll simply need to check if your search and pokemon typeMasks are equal.
 
 ---
 
-Lastly, if you wan't to display all the water and all the electricity pokemon :
+Lastly, if you want to display all the water and all the electricity pokemon :
 
 - pokemon.typeMask AND (10 OR 1000)
 
