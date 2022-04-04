@@ -3,7 +3,7 @@ title: The usage of bitwise operators in Unity
 date: '2022-03-26'
 tags: ['unity']
 draft: false
-summary: Bitwise operations are one of the most basic operations you can give to a processor. They can be very useful in unity to manipulate layerMasks.
+summary: Bitwise operations are some of the most basic operations you can give to a processor. They can be very useful in unity to manipulate layerMasks.
 ---
 
 ## The bitwise operators
